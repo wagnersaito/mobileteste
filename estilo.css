@@ -31,6 +31,20 @@ header>div{
     height: 22px;
 }
 
+.produto img{
+    height: 140px;
+    width: 140px;
+    border: 2px solid rgb(228, 228, 228);
+   
+}
+
+.vendas{
+    display: flex;
+    justify-content: space-around;
+    padding: 7px;
+
+
+}
 @media screen and (min-width:){
     header>div{
         display: none;
