@@ -8,9 +8,12 @@ body{
 
 header{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 15vh;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 17vh;
+    padding: 10px;
+    background-color: rgba(226, 139, 99, 0.5);
 }
 
 header h1{
@@ -18,12 +21,33 @@ header h1{
     font-size: 25pt;
     margin: 0;
     height: 35px;
+    line-height: 30px;
+    width: 50vw;
 }
 
 header>div{
     position: relative;
     width: 7px;
-    height: 70px;
+    height: 22px;
+}
+
+@media screen and (min-width:){
+    header>div{
+        display: none;
+    }
+
+    #navegacao{
+        display: block;
+    }
+
+    #navegacao>div{
+        position: relative;
+    }
+
+    #navegacao input{
+        display: none;
+    }
+
 }
 
 .search.icon {
